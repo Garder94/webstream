@@ -1,0 +1,37 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Video Streaming</title>
+  </head>
+  <body>
+    
+    <div class="container">
+    
+      <div class="col-12">
+          <div class="row">
+      <img src="{{url_for('static', filename='logo.png')}}" height="332" width="555">
+      <img src="{{url_for('static', filename='hjernen.png')}}" height="332" width="400">
+      </div>
+    
+    <div class="row"><h2 class="text-success">Vi har åpningstider mandag til fredag fra 09:00 til 21:00</h2></div>
+    
+    <div class="row">    <p class="text-info">Hos oss får du tilgang til verktøy, maskiner og praktisk hjelp til å realisere dine ideer.
+        <br>
+        I vinduene kan du også se forskjellige prosjekter som er blitt laget her.
+        <br>
+        <br>
+        Lurer du på hva slags utstyr vi har, dropp innom for å få en guidet tur hos oss.
+        <br>
+        <br>
+        Det er også mulig å kontakte oss på e-post: makerpace@oslomet.no
+        <br>
+        Følg oss på Facebook: OsloMet Makerpace 
+      </p>
+    <br></div>
+    <div class="row"> 
+    <img id="bg" src="{{ url_for('video_feed') }}">
+    </div>
+  </div>
+</div>
+  </body>
+</html>
