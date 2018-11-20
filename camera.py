@@ -26,11 +26,11 @@ class VideoCamera(object):
         success1, image1 = self.video1.read()
         success2, image2 = self.video2.read()
         #success3, image3 = self.video3.read()
-        final = cv2.hconcat([image, image2])
+        final = cv2.hconcat([image, image1])
         #final1 = cv2.hconcat([image2, image3])   
          
-        final2 = np.concatenate((final, image1), axis=0)
-        resize = cv2.resize(final2,None, fx=0.8, fy=0.8)
+        #final2 = np.concatenate((final, image2), axis=0)
+        resize = cv2.resize(final,None, fx=0.8, fy=0.8)
         # We are using Motion JPEG, but OpenCV defaults to capture raw images,
         # so we must encode it into JPEG in order to correctly display the
         # video stream.
