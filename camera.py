@@ -21,10 +21,10 @@ class VideoCamera(object):
         self.video3.release()
     
     def get_frame(self):        
-        success1, image = self.video.read()
-        success2, image1 = self.video1.read()
-        success1, image2 = self.video2.read()
-        success2, image3 = self.video3.read()
+        success, image = self.video.read()
+        success1, image1 = self.video1.read()
+        success2, image2 = self.video2.read()
+        success3, image3 = self.video3.read()
         final = cv2.hconcat([image, image1])
         final1 = cv2.hconcat([image2, image3])    
         final2 = cv2.vconcat([final, final1])
