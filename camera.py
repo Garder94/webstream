@@ -7,7 +7,7 @@ class VideoCamera(object):
         # from a webcam, comment the line below out and use a video file
         # instead.
         self.video = cv2.VideoCapture(0)
-        self.video1 = cv2.VideoCapture(3)
+        self.video1 = cv2.VideoCapture(1)
         #self.video2 = cv2.VideoCapture(2)
         #self.video3 = cv2.VideoCapture(3)
         
